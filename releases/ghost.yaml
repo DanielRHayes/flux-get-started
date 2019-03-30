@@ -21,11 +21,7 @@ spec:
       requests:
         memory: 32Mi
         cpu: 10m
-    service:
-       type: NodePort
-       ports:
-        port: 80
-        nodePort: 30080
+    serviceType: NodePort
     mariadb:
       persistence:
         enabled: false
